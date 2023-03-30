@@ -20,12 +20,11 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginPressed(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text{
-            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-                guard self != nil else { return }
+            Auth.auth().signIn(withEmail: email, password: password) {authResult, error in
                 if let e = error{
                     print(e)
                 }else{
-                    self?.performSegue(withIdentifier: "ChatScreen", sender: self)
+                    self.performSegue(withIdentifier: "ChatScreen", sender: self)
                 }
             }
         }
