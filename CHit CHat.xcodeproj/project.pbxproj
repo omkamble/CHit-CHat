@@ -45,6 +45,10 @@
 		2EA0191C29D3FD3D00B7460A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2EA0191B29D3FD3D00B7460A /* FirebaseStorage */; };
 		2EA0191E29D3FD3D00B7460A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2EA0191D29D3FD3D00B7460A /* FirebaseStorageCombine-Community */; };
 		2EBD22E229D5411900F7A9BF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2EBD22E129D5411900F7A9BF /* IQKeyboardManagerSwift */; };
+		2EC428B829D5A39900251426 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC428B729D5A39900251426 /* Constants.swift */; };
+		2EC428BA29D5B59000251426 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC428B929D5B59000251426 /* Message.swift */; };
+		2EC428BD29D5B72F00251426 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC428BB29D5B72F00251426 /* MessageCell.swift */; };
+		2EC428BE29D5B72F00251426 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC428BC29D5B72F00251426 /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +64,10 @@
 		2EA018E229D3FA5C00B7460A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2EA018E429D3FA9900B7460A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2EA018E629D3FB4500B7460A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2EC428B729D5A39900251426 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2EC428B929D5B59000251426 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2EC428BB29D5B72F00251426 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		2EC428BC29D5B72F00251426 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,10 @@
 				2EA018D029D3F89700B7460A /* ViewController.swift */,
 				2EA018D229D3F89700B7460A /* Main.storyboard */,
 				2EA018E429D3FA9900B7460A /* ChatViewController.swift */,
+				2EC428BB29D5B72F00251426 /* MessageCell.swift */,
+				2EC428BC29D5B72F00251426 /* MessageCell.xib */,
+				2EC428B929D5B59000251426 /* Message.swift */,
+				2EC428B729D5A39900251426 /* Constants.swift */,
 				2EA018E029D3FA4800B7460A /* RegisterViewController.swift */,
 				2EA018E229D3FA5C00B7460A /* LoginViewController.swift */,
 				2EA018D529D3F89B00B7460A /* Assets.xcassets */,
@@ -227,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC428BE29D5B72F00251426 /* MessageCell.xib in Resources */,
 				2EA018D929D3F89B00B7460A /* LaunchScreen.storyboard in Resources */,
 				2EA018E729D3FB4500B7460A /* GoogleService-Info.plist in Resources */,
 				2EA018D629D3F89B00B7460A /* Assets.xcassets in Resources */,
@@ -245,8 +258,11 @@
 				2EA018CD29D3F89700B7460A /* AppDelegate.swift in Sources */,
 				2EA018CF29D3F89700B7460A /* SceneDelegate.swift in Sources */,
 				2EA018E329D3FA5C00B7460A /* LoginViewController.swift in Sources */,
+				2EC428B829D5A39900251426 /* Constants.swift in Sources */,
+				2EC428BA29D5B59000251426 /* Message.swift in Sources */,
 				2EA018E529D3FA9900B7460A /* ChatViewController.swift in Sources */,
 				2EA018E129D3FA4800B7460A /* RegisterViewController.swift in Sources */,
+				2EC428BD29D5B72F00251426 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
