@@ -73,7 +73,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mKK-Ce-Q1U"/>
                     <connections>
-                        <outlet property="titleLabel" destination="jxZ-ca-ea4" id="zqS-O2-gTD"/>
+                        <outlet property="titleLabel" destination="jxZ-ca-ea4" id="ZDj-ef-Jyz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DX5-cq-PnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -123,7 +123,7 @@
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
                                         <connections>
-                                            <action selector="registerPressed:" destination="FyD-BE-R6S" eventType="touchUpInside" id="vQS-Wm-uDJ"/>
+                                            <action selector="registerPressed:" destination="FyD-BE-R6S" eventType="touchUpInside" id="BNM-J0-g4v"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-IY-m2X">
@@ -166,9 +166,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="EJB-PS-WcE"/>
                     <connections>
-                        <outlet property="emailTF" destination="4MG-PR-crP" id="0rA-qv-pSG"/>
-                        <outlet property="emailTextfield" destination="4MG-PR-crP" id="aD1-Vr-IHn"/>
-                        <outlet property="passwordTF" destination="i20-c0-D7H" id="ijE-ql-R9O"/>
+                        <outlet property="emailTextfield" destination="4MG-PR-crP" id="0rA-qv-pSG"/>
                         <outlet property="passwordTextfield" destination="i20-c0-D7H" id="6Kw-c3-4rI"/>
                         <segue destination="0eJ-xU-MnK" kind="push" identifier="ChatS" id="Heu-4D-jxK"/>
                     </connections>
@@ -229,7 +227,7 @@
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginPressed:" destination="MBv-68-Zgo" eventType="touchUpInside" id="hm7-ge-VWg"/>
+                                            <action selector="loginPressed:" destination="MBv-68-Zgo" eventType="touchUpInside" id="gvK-0I-fSi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -263,8 +261,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="AHU-Ka-LT7"/>
                     <connections>
-                        <outlet property="emailTextfield" destination="ubD-RZ-ccX" id="lWW-Kp-krc"/>
-                        <outlet property="passwordTextfield" destination="X4B-OF-94Y" id="HVt-J5-C55"/>
+                        <outlet property="emailTextField" destination="ubD-RZ-ccX" id="GmN-eA-rRX"/>
+                        <outlet property="passwordTextField" destination="X4B-OF-94Y" id="rHI-Ck-Gnm"/>
                         <segue destination="0eJ-xU-MnK" kind="push" identifier="ChatScreen" id="TXy-Ug-f5l"/>
                     </connections>
                 </viewController>
@@ -317,7 +315,7 @@
                                         <color key="tintColor" name="BrandLightPurple"/>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="sendPressed:" destination="0eJ-xU-MnK" eventType="touchUpInside" id="lGt-en-NPr"/>
+                                            <action selector="sendPressed:" destination="0eJ-xU-MnK" eventType="touchUpInside" id="Lnw-37-S6L"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -346,8 +344,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="gow-7b-z4n"/>
                     <connections>
-                        <outlet property="messageTextfield" destination="V7B-6h-tFL" id="Udh-6g-hCQ"/>
-                        <outlet property="tableView" destination="1dk-Wn-Ys5" id="gM5-2K-oHq"/>
+                        <outlet property="messageTextfield" destination="V7B-6h-tFL" id="6EE-ad-1wt"/>
+                        <outlet property="tableView" destination="1dk-Wn-Ys5" id="Uj3-Cd-hXi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SB-ge-z0T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -374,7 +372,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Heu-4D-jxK"/>
+        <segue reference="TXy-Ug-f5l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>

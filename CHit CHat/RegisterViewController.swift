@@ -8,30 +8,25 @@
 import UIKit
 import FirebaseAuth
 class RegisterViewController: UIViewController {
-
-    @IBOutlet weak var passwordTF: UITextField!
-    @IBOutlet weak var emailTF: UITextField!
+    
+    @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var emailTextfield: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let email = emailTF.text, let password = passwordTF.text{
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if let e = error{
-                print(e)
-            }else{
-                self.performSegue(withIdentifier: "ChatS", sender: self)
+    }
+        
+    @IBAction func registerPressed(_ sender: UIButton) {
+        if let email = emailTextfield.text, let password = passwordTextfield.text{
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error{
+                    print(e)
+                }else{
+                    self.performSegue(withIdentifier: "ChatS", sender: self)
+                }
             }
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

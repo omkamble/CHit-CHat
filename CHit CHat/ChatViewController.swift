@@ -9,12 +9,19 @@ import UIKit
 
 class ChatViewController: UIViewController {
 
+    
+    @IBOutlet weak var messageTextfield: UITextField!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-
+    @IBAction func sendPressed(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
