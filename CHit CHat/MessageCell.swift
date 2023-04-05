@@ -14,6 +14,7 @@ class MessageCell: UITableViewCell {
         messageBubble.layer.cornerRadius = messageBubble.frame.size.height/5
     }
 
+    @IBOutlet weak var leftImageView: UIImageView!
     @IBOutlet weak var rightImageView: UIImageView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var messageBubble: UIView!
